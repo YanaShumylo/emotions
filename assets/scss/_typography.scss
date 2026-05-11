@@ -1,0 +1,24 @@
+h1 {
+  font-family: $title-font;
+  color: var(--header-glow);
+  line-height: 1.5;
+  font-size: 32px;
+  letter-spacing: 0.1em;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $title-font;
+  color: var(--heading);
+}
+
+p {
+  font-family: $text-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text);
+}

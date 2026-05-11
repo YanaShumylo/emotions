@@ -1,0 +1,54 @@
+body.theme-neutral {
+  --bg: #f7f7f7;
+  --surface: #ffffff;
+  --text: #2b2b2b;
+  --heading: #1f2937;
+  --accent: #6c5ce7;
+  --accent-hover: #5a4fcf;
+  --header-glow: #5a4fcf;
+  --text-nav: #ffffff;
+}
+
+body.theme-joy {
+  --bg: #fff8e1;
+  --surface: #ffffff;
+  --text: #2b2b2b;
+  --heading: #1f2937;
+  --accent: #ffb300;
+  --accent-hover: #ffa000;
+  --header-glow: #ffa000;
+  --text-nav: #ffffff;
+}
+
+body.theme-sad {
+  --bg: #eaf3ff;
+  --surface: #ffffff;
+  --text: #2c3e50;
+  --heading: #1b2a41;
+  --accent: #4a90e2;
+  --accent-hover: #357abd;
+  --header-glow: #357abd;
+  --text-nav: #ffffff;
+}
+
+body.theme-angry {
+  --bg: #fff1f1;
+  --surface: #ffffff;
+  --text: #2b2b2b;
+  --heading: #111111;
+  --accent: #ff4d4d;
+  --accent-hover: #e63946;
+  --header-glow: #e63946;
+  --text-nav: #ffffff;
+}
+
+body.theme-calm {
+  --bg: #f1faf7;
+  --surface: #ffffff;
+  --text: #2d3436;
+  --heading: #1e3d34;
+  --accent: #2ecc71;
+  --accent-hover: #27ae60;
+  --header-glow: #27ae60;
+  --text-nav: #ffffff;
+}

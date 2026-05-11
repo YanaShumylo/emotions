@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $text-font;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 8 10px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding: 10 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+  }
+}
