@@ -1,13 +1,27 @@
+# dependencies
 node_modules/
+vendor/
+
+# build
 dist/
 build/
 
+# environment
 .env
+
+# logs
 *.log
 
+# OS files
 .DS_Store
 Thumbs.db
 
+# IDE
 .vscode/
 
-vendor/
+# WordPress uploads
+wp-content/uploads/
+
+# temp/cache
+*.cache
+.tmp/
