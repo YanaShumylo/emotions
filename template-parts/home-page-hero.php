@@ -15,6 +15,12 @@ $hero_description_button = get_field('description_button') ?? 'Description here.
             </p>
         </div>
         <div class="hero-actions">
+            <?php if ($hero_description_button): ?>
+                <p class="text-question">
+                    <?php echo esc_html($hero_description_button); ?>
+                </p>
+            <?php endif; ?>
+
             <?php if (have_rows('theme_switcher')): ?>
                 <div class="theme-switcher">
                     <?php while (have_rows('theme_switcher')): the_row(); ?>
@@ -35,9 +41,7 @@ $hero_description_button = get_field('description_button') ?? 'Description here.
                         </button>
                     <?php endwhile; ?>
                 </div>
-                <p class="text-question">
-                    <?php echo esc_html($hero_description_button); ?>
-                </p>
+
             <?php endif; ?>
         </div>
     </div>

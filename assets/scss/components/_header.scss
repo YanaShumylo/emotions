@@ -1,5 +1,11 @@
 .header {
+  padding: 20px 0;
   background: var(--header-glow);
+  transition: background 0.3s ease;
+
+  .container {
+    position: relative;
+  }
 }
 
 .header-inner {
