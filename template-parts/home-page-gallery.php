@@ -28,9 +28,9 @@
                                 <div class="gallery-card-content">
 
                                     <?php if ($title): ?>
-                                        <h3 class="gallery-card-title">
+                                        <h4 class="gallery-card-title">
                                             <?php echo esc_html($title); ?>
-                                        </h3>
+                                        </h4>
                                     <?php endif; ?>
 
                                     <?php if ($desc): ?>

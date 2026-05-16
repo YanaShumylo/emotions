@@ -2,7 +2,7 @@ h1 {
   font-family: $title-font;
   color: var(--header-glow);
   line-height: 1.5;
-  font-size: 48px;
+  font-size: 32px;
   letter-spacing: 0.1em;
 }
 
@@ -18,7 +18,6 @@ h6 {
 p {
   font-family: $text-font;
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.8;
   color: var(--text);
 }
