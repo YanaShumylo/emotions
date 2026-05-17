@@ -1,0 +1,67 @@
+.global-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 1000;
+}
+
+.global-modal.active {
+  display: flex;
+}
+
+.global-modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.global-modal-content {
+  position: relative;
+  width: 100%;
+  max-width: 680px;
+  max-height: calc(100vh - 32px);
+  overflow-y: auto;
+  border-radius: 32px;
+  z-index: 2;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.global-modal-body {
+  position: relative;
+  z-index: 2;
+}
+
+.global-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  color: $white;
+  font-size: 24px;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+  z-index: 20;
+}
+
+.global-modal-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+body.modal-open {
+  overflow: hidden;
+  touch-action: none;
+  overscroll-behavior: none;
+}

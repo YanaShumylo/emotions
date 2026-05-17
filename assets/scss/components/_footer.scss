@@ -1,0 +1,9 @@
+.footer {
+  padding: 20px 10px;
+  background: var(--header-glow);
+  transition: background 0.3s ease;
+
+  .container {
+    position: relative;
+  }
+}

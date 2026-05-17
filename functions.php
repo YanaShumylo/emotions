@@ -17,3 +17,6 @@ require get_template_directory() . '/inc/_menus.php';
 
 //swiper
 require get_template_directory() . '/inc/_swiper.php';
+
+//modal
+require get_template_directory() . '/inc/_modal.php';

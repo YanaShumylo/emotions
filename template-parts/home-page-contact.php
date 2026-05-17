@@ -14,9 +14,13 @@ $contact_description = get_field('contact_description') ?: 'Description here...'
             </p>
         </div>
 
-        <?php
-        echo do_shortcode('[contact-form-7 id="47594af" title="Contact form 1"]');
-        ?>
+        <div class="form-wrapper">
+            <div class="form-card">
+            <?php
+            echo do_shortcode('[contact-form-7 id="47594af" title="Contact form 1"]');
+            ?>
+        </div>
+    </div>
 
     </div>
 </section>

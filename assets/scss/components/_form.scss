@@ -1,0 +1,164 @@
+.form-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-card {
+  position: relative;
+  padding: 24px;
+  background: var(--accent);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+.form-wrapper .wpcf7 form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  z-index: 2;
+}
+
+.form-wrapper .wpcf7 label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text);
+  font-family: $text-font;
+}
+
+.form-wrapper .wpcf7 input,
+.form-wrapper .wpcf7 textarea,
+.form-wrapper .wpcf7 select {
+  width: 100%;
+  padding: 18px 20px;
+  border: none;
+  border-radius: 18px;
+  outline: 2px solid transparent;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  font-family: $text-font;
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.form-wrapper .wpcf7 textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.form-wrapper .wpcf7 input:focus,
+.form-wrapper .wpcf7 textarea:focus,
+.form-wrapper .wpcf7 select:focus {
+  transform: translateY(-2px);
+  background: $white;
+}
+
+.form-wrapper .wpcf7 input::placeholder,
+.form-wrapper .wpcf7 textarea::placeholder {
+  color: $grey;
+  font-family: $text-font;
+}
+
+.contact_select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+.contact-radio {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.contact-radio .wpcf7-list-item {
+  margin: 0;
+}
+
+.contact-radio label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 4px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.contact-radio label:hover {
+  transform: translateY(-2px);
+  background: var(--accent);
+}
+
+.contact-radio input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--heading);
+}
+
+.contact-radio .wpcf7-list-item-label {
+  color: var(--heading);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.form-wrapper .wpcf7-submit {
+  border: none;
+  padding: 18px 32px;
+  border-radius: 18px;
+  background: $white;
+  color: var(--accent);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.form-wrapper .wpcf7-submit:hover {
+  transform: translateY(-3px);
+  background: var(--contact-bg);
+  color: $white;
+}
+
+.form-wrapper .wpcf7-spinner {
+  filter: brightness(0) invert(1);
+}
+
+.form-wrapper .wpcf7-response-output {
+  margin: 6px 0 0 !important;
+  padding: 16px 20px !important;
+  border: none !important;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.15);
+  color: $red;
+}
+
+@media (min-width: 768px) {
+  .contact-radio {
+    grid-template-columns:
+      repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .form-card {
+    padding: 28px;
+  }
+
+}

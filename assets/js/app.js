@@ -90,4 +90,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 
+        // modal
+    const modal = document.getElementById('globalModal');
+    const modalBody = document.getElementById('globalModalBody');
+
+    document.querySelectorAll('[data-modal-open]').forEach(btn => {
+
+        btn.addEventListener('click', () => {
+
+            const type = btn.dataset.modalOpen;
+
+            modal.classList.add('active');
+            document.body.classList.add('modal-open');
+
+            fetch('/wp-admin/admin-ajax.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: new URLSearchParams({
+                    action: 'load_modal',
+                    type: type
+                })
+            })
+                .then(res => res.text())
+                .then(html => {
+                    modalBody.innerHTML = html;
+                });
+
+        });
+
+    });
+
+    const closeModal = () => {
+        modal.classList.remove('active');
+        document.body.classList.remove('modal-open');
+        modalBody.innerHTML = '';
+    };
+
+    document.querySelectorAll('[data-modal-close]').forEach(el => {
+        el.addEventListener('click', closeModal);
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
+    });
 });
