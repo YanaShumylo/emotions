@@ -90,6 +90,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 
+    // burger menu
+    const burger = document.getElementById('burger');
+    const menu = document.querySelector('.header-menu');
+
+    if (burger && menu) {
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+    }
+
         // modal
     const modal = document.getElementById('globalModal');
     const modalBody = document.getElementById('globalModalBody');

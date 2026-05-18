@@ -7,7 +7,8 @@ body.theme-neutral {
   --accent-hover: #5a4fcf;
   --header-glow: #5a4fcf;
   --text-nav: #ffffff;
-   --contact-bg: linear-gradient(135deg, #6c5ce7 0%, #8b7cff 100%);
+  --contact-bg: linear-gradient(135deg, #6c5ce7 0%, #8b7cff 100%);
+  --burger-menu:  #8b7cff;
 }
 
 body.theme-joy {
@@ -20,6 +21,7 @@ body.theme-joy {
   --header-glow: #ffa000;
   --text-nav: #ffffff;
   --contact-bg: linear-gradient(135deg, #ffb300 0%, #ffd54f 100%);
+  --burger-menu: #ffd54f;
 }
 
 body.theme-sad {
@@ -32,6 +34,7 @@ body.theme-sad {
   --header-glow: #357abd;
   --text-nav: #ffffff;
   --contact-bg: linear-gradient(135deg, #4a90e2 0%, #7db7ff 100%);
+  --burger-menu: #7db7ff;
 }
 
 body.theme-angry {
@@ -44,6 +47,7 @@ body.theme-angry {
   --header-glow: #e63946;
   --text-nav: #ffffff;
   --contact-bg: linear-gradient(135deg, #ff4d4d 0%, #ff7b7b 100%);
+  --burger-menu:  #ff7b7b;
 }
 
 body.theme-calm {
@@ -56,4 +60,5 @@ body.theme-calm {
   --header-glow: #27ae60;
   --text-nav: #ffffff;
   --contact-bg: linear-gradient(135deg, #2ecc71 0%, #6ee7a8 100%);
+  --burger-menu: #6ee7a8;
 }
