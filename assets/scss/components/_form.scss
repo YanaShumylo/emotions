@@ -57,7 +57,7 @@
 .form-wrapper .wpcf7 textarea:focus,
 .form-wrapper .wpcf7 select:focus {
   transform: translateY(-2px);
-  background: $white;
+  background: var(--surface);
 }
 
 .form-wrapper .wpcf7 input::placeholder,
