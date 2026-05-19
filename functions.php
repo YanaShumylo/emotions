@@ -20,3 +20,6 @@ require get_template_directory() . '/inc/_swiper.php';
 
 //modal
 require get_template_directory() . '/inc/_modal.php';
+
+//acf-options
+require get_template_directory() . '/inc/_acf-options.php';
