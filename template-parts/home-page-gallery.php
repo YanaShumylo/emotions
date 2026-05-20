@@ -18,10 +18,18 @@
 
                                 <?php if (!empty($img)): ?>
                                     <div class="gallery-card-img">
-                                        <img
-                                            src="<?php echo esc_url($img['url']); ?>"
-                                            alt="<?php echo esc_attr($img['alt'] ?? $title); ?>"
-                                            loading="lazy">
+                                        <?php echo wp_get_attachment_image(
+                                            $img,
+                                            'gallery-card',
+                                            false,
+                                            [
+                                                'class' => 'gallery-image',
+                                                'loading' => 'lazy',
+                                                'decoding' => 'async',
+                                                'alt' => $img['alt'] ?? $title
+                                            ]
+                                        );
+                                        ?>
                                     </div>
                                 <?php endif; ?>
 

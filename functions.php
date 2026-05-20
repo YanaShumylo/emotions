@@ -23,3 +23,6 @@ require get_template_directory() . '/inc/_modal.php';
 
 //acf-options
 require get_template_directory() . '/inc/_acf-options.php';
+
+//size image gallery
+require get_template_directory() . '/inc/_images.php';

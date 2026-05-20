@@ -6,12 +6,16 @@ Template Post Type: page
 get_header();
 ?>
 
-<?php get_template_part('template-parts/home-page', 'hero'); ?>
+<main>
 
-<?php get_template_part('template-parts/home-page', 'faq'); ?>
+    <?php get_template_part('template-parts/home-page', 'hero'); ?>
 
-<?php get_template_part('template-parts/home-page', 'gallery'); ?>
+    <?php get_template_part('template-parts/home-page', 'faq'); ?>
 
-<?php get_template_part('template-parts/home-page', 'contact') ?>
+    <?php get_template_part('template-parts/home-page', 'gallery'); ?>
 
-<?php get_footer(); ?>
+    <?php get_template_part('template-parts/home-page', 'contact') ?>
+
+</main>
+
+    <?php get_footer(); ?>

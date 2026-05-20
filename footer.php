@@ -88,7 +88,7 @@
             <div class="footer-socials">
 
                 <?php if ($youtube): ?>
-                    <a href="<?php echo esc_url($youtube); ?>" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <a aria-label="YouTube" href="<?php echo esc_url($youtube); ?>" target="_blank" rel="noopener noreferrer" class="social-link">
 
                         <svg viewBox="0 0 24 24" fill="currentColor">
                             <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8zM9.5 15.5v-7l6 3.5-6 3.5z" />
@@ -98,7 +98,7 @@
                 <?php endif; ?>
 
                 <?php if ($instagram): ?>
-                    <a href="<?php echo esc_url($instagram); ?>" target="_blank" class="social-link">
+                    <a aria-label="Instagram" href="<?php echo esc_url($instagram); ?>" target="_blank" class="social-link">
 
                         <svg viewBox="0 0 24 24" fill="none">
                             <rect x="2" y="2" width="20" height="20" rx="5"
@@ -115,7 +115,7 @@
                 <?php endif; ?>
 
                 <?php if ($telegram): ?>
-                    <a href="<?php echo esc_url($telegram); ?>" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <a aria-label="Telegram" href="<?php echo esc_url($telegram); ?>" target="_blank" rel="noopener noreferrer" class="social-link">
 
                         <svg viewBox="0 0 24 24" fill="currentColor">
                             <path d="M22 2L11 13" />
@@ -136,7 +136,7 @@
     </div>
 </footer>
 
-<div class="global-modal" id="globalModal">
+<div class="global-modal" id="globalModal" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="global-modal-overlay" data-modal-close></div>
 
     <div class="global-modal-content">

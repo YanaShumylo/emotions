@@ -39,23 +39,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // свайпер для галереї карток
-    document.querySelectorAll('.gallerySlider').forEach((el) => {
+    const gallerySlider = document.querySelector('.gallerySlider');
 
-        if (typeof Swiper !== 'undefined') {
+    if (gallerySlider && typeof Swiper !== 'undefined') {
 
-            new Swiper(el, {
+        requestIdleCallback(() => {
+
+            new Swiper(gallerySlider, {
                 slidesPerView: 1,
                 spaceBetween: 20,
                 loop: true,
 
                 pagination: {
-                    el: el.querySelector('.swiper-pagination'),
+                    el: gallerySlider.querySelector('.swiper-pagination'),
                     clickable: true,
                 },
 
                 navigation: {
-                    nextEl: el.querySelector('.swiper-button-next'),
-                    prevEl: el.querySelector('.swiper-button-prev'),
+                    nextEl: gallerySlider.querySelector('.swiper-button-next'),
+                    prevEl: gallerySlider.querySelector('.swiper-button-prev'),
                 },
 
                 breakpoints: {
@@ -64,8 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
 
-        }
     });
+}
 
     // FAQ
     document.querySelectorAll('.faq-question').forEach((button) => {
@@ -73,19 +75,30 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('click', () => {
 
             const faqItem = button.parentElement;
+            const answer = faqItem.querySelector('.faq-answer');
 
             // закрити інші
             document.querySelectorAll('.faq-item').forEach((item) => {
 
                 if (item !== faqItem) {
                     item.classList.remove('active');
+                    const otherAnswer = item.querySelector('.faq-answer');
+                    otherAnswer.style.maxHeight = null;
                 }
 
             });
 
             // toggle поточного
             faqItem.classList.toggle('active');
+            if (faqItem.classList.contains('active')) {
 
+                answer.style.maxHeight =
+                    answer.scrollHeight + 'px';
+
+            } else {
+
+                answer.style.maxHeight = null;
+            }
         });
 
     });

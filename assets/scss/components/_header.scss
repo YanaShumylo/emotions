@@ -44,7 +44,7 @@
     height: 3px;
     background: var(--text-nav);
     border-radius: 10px;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease ;
   }
 
   &.active {
@@ -97,7 +97,7 @@
       line-height: 1.8;
       color: var(--text-nav);
       text-decoration: none;
-      transition: all 0.3s ease;
+      transition: color 0.3s ease;
       &:hover {
         color: var(--accent);
       }
@@ -107,7 +107,7 @@
       a {
         color: var(--text-nav);
         font-weight: 500;
-        transition: all 0.3s ease;
+        transition: color 0.3s ease;
         &:hover {
           color: var(--accent);
         }

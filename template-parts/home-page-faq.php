@@ -7,9 +7,9 @@ $faq_description = get_field('faq_description') ?? 'Description here...';
 
     <div class="container">
 
-        <h3 class="faq-content">
+        <h2 class="faq-content">
             <?php echo esc_html($faq_content); ?>
-        </h3>
+        </h2>
 
         <?php if (have_rows('faq_repeater')): ?>
 

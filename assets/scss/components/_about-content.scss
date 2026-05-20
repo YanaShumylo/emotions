@@ -1,22 +1,20 @@
 .about-content {
   padding: 20px 10px;
   background: var(--bg);
-  animation: blurIn 0.8s ease forwards;
+  animation: fadeUp 0.8s ease forwards;
 
     .container {
     position: relative;
   }
 }
 
-@keyframes blurIn {
+@keyframes  fadeUp {
   from {
     opacity: 0;
-    filter: blur(10px);
     transform: translateY(20px);
   }
   to {
     opacity: 1;
-    filter: blur(0);
     transform: translateY(0);
   }
 }
